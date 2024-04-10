@@ -1,8 +1,13 @@
+<!-- ルートコンポーネント -->
+
+<!-- JavaScript部分 -->
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import TestComponent from './components/TestComponent.vue'
 </script>
 
+<!-- HTML部分 -->
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
@@ -13,10 +18,12 @@ import TheWelcome from './components/TheWelcome.vue'
   </header>
 
   <main>
-    <TheWelcome />
+    <!-- <TheWelcome /> -->
+    <TestComponent text="propsを試してみた!"/>
   </main>
 </template>
 
+<!-- CSS部分 -->
 <style>
 @import './assets/base.css';
 
