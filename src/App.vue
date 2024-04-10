@@ -5,8 +5,9 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import TestComponent from './components/TestComponent.vue'
-import ListComponent from './components/ListComponent.vue';
+// import ListComponent from './components/ListComponent.vue';
 import IfComponent from './components/IfComponent.vue';
+import CountComponent from './components/CountComponent.vue'
 </script>
 
 <!-- HTML部分 -->
