@@ -3,11 +3,19 @@
 <!-- JavaScript部分 -->
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import TestComponent from './components/TestComponent.vue'
+// import TheWelcome from './components/TheWelcome.vue'
+// import TestComponent from './components/TestComponent.vue'
 // import ListComponent from './components/ListComponent.vue';
-import IfComponent from './components/IfComponent.vue';
-import CountComponent from './components/CountComponent.vue'
+// import IfComponent from './components/IfComponent.vue';
+// import CountComponent from './components/CountComponent.vue'
+import EmitComponent from './components/EmitComponent.vue';
+
+// 子コンポーネントから値を受け取る、Composition API
+import { ref } from 'vue';
+const receivedMessage = ref(''); //リアクティブな変数を作成、初期値を設定する
+const handleMessageFromChild = (message) => {
+  receivedMessage.value = message; //refでラップされた変数にアクセスする場合には.valueを使う
+};
 </script>
 
 <!-- HTML部分 -->
@@ -25,7 +33,12 @@ import CountComponent from './components/CountComponent.vue'
     <!-- <TestComponent text="propsを試してみた!"/> -->
     <!-- <ListComponent/> -->
     <!-- <IfComponent/> -->
-    <CountComponent/>
+    <!-- <CountComponent/> -->
+
+    <div>
+      <EmitComponent  @message="handleMessageFromChild" />
+      <p>{{ receivedMessage }}</p>
+    </div>
   </main>
 </template>
 
