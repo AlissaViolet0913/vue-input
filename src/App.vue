@@ -6,6 +6,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import TestComponent from './components/TestComponent.vue'
 import ListComponent from './components/ListComponent.vue';
+import IfComponent from './components/IfComponent.vue';
 </script>
 
 <!-- HTML部分 -->
@@ -21,7 +22,8 @@ import ListComponent from './components/ListComponent.vue';
   <main>
     <!-- <TheWelcome /> -->
     <!-- <TestComponent text="propsを試してみた!"/> -->
-    <ListComponent/>
+    <!-- <ListComponent/> -->
+    <IfComponent/>
   </main>
 </template>
 
