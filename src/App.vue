@@ -23,7 +23,8 @@ import IfComponent from './components/IfComponent.vue';
     <!-- <TheWelcome /> -->
     <!-- <TestComponent text="propsを試してみた!"/> -->
     <!-- <ListComponent/> -->
-    <IfComponent/>
+    <!-- <IfComponent/> -->
+    <CountComponent/>
   </main>
 </template>
 
