@@ -5,6 +5,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import TestComponent from './components/TestComponent.vue'
+import ListComponent from './components/ListComponent.vue';
 </script>
 
 <!-- HTML部分 -->
@@ -19,7 +20,8 @@ import TestComponent from './components/TestComponent.vue'
 
   <main>
     <!-- <TheWelcome /> -->
-    <TestComponent text="propsを試してみた!"/>
+    <!-- <TestComponent text="propsを試してみた!"/> -->
+    <ListComponent/>
   </main>
 </template>
 
